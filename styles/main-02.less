@@ -310,15 +310,15 @@ span.handwriting {
     }
 }
 
-.block_main.lp-04 {
-    background-color: @color_bg-gray;
-    background-image: url('../images/lp-04/img_main-bg.jpg');
+.block_main.lp-05 {
+    background-color: @color_bg-beige;
+    background-image: url('../images/lp-05/img_main-bg.jpg');
     background-position: 100% bottom;
     background-repeat: no-repeat;
     background-size: contain;
 
     .main-text {
-        background: linear-gradient(90deg, @color_bg-gray 60%, transparent);
+        background: linear-gradient(90deg, @color_bg-beige 60%, transparent);
         padding-top: 56px;
         padding-bottom: 80px;
         width: 100%;
@@ -328,6 +328,11 @@ span.handwriting {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+
+        .heading-main {
+            font-size: 50px;
+            line-height: 60px;
+        }
 
         p+p {
             margin-top: 20px;
@@ -340,13 +345,21 @@ span.handwriting {
     }
 }
 
-/* Block "If" */
-.block_if.lp-04 {
-    background-image: url('../images/bg_decor.svg');
+/* Block "Two in One" */
+.two-in-one {
+    background-image: url('../images/lp-05/bg_decor.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0;
+}
+
+/* Block "If" */
+.block_if.lp-05 {
+    .title {
+        text-align: center;
+        margin: 20px auto 60px auto;
+    }
 
     .if-wrapper {
         display: grid;
@@ -367,14 +380,57 @@ span.handwriting {
     .if-text {
         text-align: center;
         margin-top: 80px;
+
+        span.handwriting {
+            img {
+                left: 60%;
+                transform: none;
+                width: 40%;
+            }
+        }
+    }
+}
+
+/* Block "What Awaits You" */
+.block_what-awaits-you.lp-05 {
+    padding-top: 120px;
+    text-align: center;
+
+    .way-wrapper {
+        margin-top: 40px;
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        grid-gap: 40px;
+    }
+
+    .bg-img {
+        width: 100%;
+        max-width: 560px;
+    }
+
+    .item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: flex-start;
+        grid-gap: 20px;
+    }
+
+    ul {
+        margin-top: 20px;
+    }
+
+    ul li+li {
+        margin-top: 14px;
     }
 }
 
 /* Block "Author" */
-.block_author.lp-04 {
-    background-color: @color_bg-mint;
-    padding-top: 80px;
-    padding-bottom: 120px;
+.block_author.lp-05 {
+    background-color: @color_bg-light;
+    padding-top: 70px;
+    padding-bottom: 80px;
     text-align: center;
 
     .author-item {
@@ -382,13 +438,13 @@ span.handwriting {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 40px;
         text-align: left;
-        padding-top: 60px;
+        padding-top: 40px;
     }
 
     .item-photo {
         width: 100%;
         max-width: 560px;
-        height: 480px;
+        height: 440px;
         object-fit: cover;
         object-position: center;
         border-radius: 8px;
@@ -430,174 +486,8 @@ span.handwriting {
     }
 }
 
-/* Block "What Awaits You" */
-.block_what-awaits-you.lp-04 {
-    padding: 80px 0;
-    text-align: center;
-
-    .way-wrapper {
-        margin-top: 80px;
-        text-align: left;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-
-        position: relative;
-    }
-
-    .way-wrapper.right-side {
-        justify-content: flex-end;
-    }
-
-    .way-wrapper+.way-wrapper {
-        margin-top: 80px;
-    }
-
-    .bg-img-01 {
-        position: absolute;
-        top: 50%;
-        left: -5%;
-        transform: translateY(-50%);
-        width: 100%;
-        max-width: 768px;
-        height: auto;
-    }
-
-    .bg-img-02 {
-        position: absolute;
-        top: 50%;
-        right: -5%;
-        transform: translateY(-50%);
-        width: 100%;
-        max-width: 480px;
-        height: auto;
-    }
-
-    .bg-img-03 {
-        position: absolute;
-        top: 50%;
-        left: -5%;
-        transform: translateY(-50%);
-        width: 100%;
-        max-width: 576px;
-        height: auto;
-    }
-
-    .item {
-        z-index: 2;
-        flex-basis: 50%;
-        display: grid;
-        grid-template-columns: auto 1fr;
-        align-items: flex-start;
-        grid-gap: 20px;
-    }
-
-    ul {
-        margin-top: 20px;
-    }
-
-    ul li+li {
-        margin-top: 28px;
-    }
-}
-
-/* Block "During Course" */
-.block_during-course.lp-04 {
-    padding: 40px 0;
-    background-image: url('../images/lp-04/img_during-course-bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
-    .dc-text {
-        text-align: center;
-    }
-
-    .dc-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 40px;
-        margin-top: 60px;
-    }
-
-    .item {
-        padding-left: 64px;
-        position: relative;
-
-        .bg-circle {
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-width: 36px;
-            min-height: 36px;
-            border-radius: 50%;
-            background-color: @color_teal;
-            filter: opacity(30%);
-        }
-
-        img {
-            position: absolute;
-            top: 6px;
-            left: 4px;
-        }
-    }
-
-    .item+.item {
-        margin-top: 40px;
-    }
-
-    .cascade-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 8px;
-    }
-
-    .cascade {
-        position: relative;
-        width: 100%;
-        height: 100%;
-
-        img {
-            position: absolute;
-            transform: translateY(-50%);
-            width: 100%;
-            max-width: 408px;
-            height: auto;
-            box-shadow: @shadow;
-            transition: all 0.1s ease;
-
-            &:hover {
-                box-shadow: @shadow-hover;
-            }
-        }
-
-        img:nth-child(1) {
-            border-radius: 50px;
-            top: 55%;
-            left: 10%;
-            right: 0;
-        }
-
-        img:nth-child(2) {
-            border-radius: 40px;
-            top: 50%;
-            left: 5%;
-            right: 5%;
-        }
-
-        img:nth-child(3) {
-            border-radius: 30px;
-            top: 45%;
-            left: 0;
-            right: 10%;
-        }
-    }
-}
-
 /* Block "After Course" */
-.block_after-course.lp-04 {
+.block_after-course.lp-05 {
     padding: 60px 0;
 
     .ac-text {
@@ -613,7 +503,7 @@ span.handwriting {
         z-index: 0;
         position: absolute;
         top: 50%;
-        left: -5%;
+        right: -5%;
         transform: translateY(-50%);
         width: 100%;
         max-width: 480px;
@@ -621,7 +511,7 @@ span.handwriting {
     }
 
     .items-list {
-        margin-left: 30%;
+        margin-right: 30%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         grid-gap: 40px;
@@ -641,7 +531,7 @@ span.handwriting {
 }
 
 /* Block "Price" */
-.block_price.lp-04 {
+.block_price.lp-05 {
     margin-top: 40px;
 
     .price-wrapper {
@@ -657,7 +547,7 @@ span.handwriting {
         z-index: 0;
         position: absolute;
         top: 50%;
-        right: -5%;
+        left: -5%;
         transform: translateY(-50%);
         width: 100%;
         max-width: 880px;
@@ -669,6 +559,7 @@ span.handwriting {
     }
 
     .item-price {
+        margin-left: auto;
         z-index: 2;
         background-color: white;
         border-radius: 10px;
@@ -820,7 +711,7 @@ span.handwriting {
     }
 
     /* Block "Main" */
-    .block_main.lp-04 {
+    .block_main.lp-05 {
         background-position: 256px bottom;
     }
 }
@@ -900,13 +791,18 @@ span.handwriting {
         }
     }
 
-    .block_main.lp-04 {
+    .block_main.lp-05 {
         background-position: 192px bottom;
 
         .main-text {
             padding-top: 48px;
             padding-bottom: 64px;
-            max-width: 480px;
+            max-width: 528px;
+
+            .heading-main {
+                font-size: 45px;
+                line-height: 55px;
+            }
 
             p+p {
                 margin-top: 40px;
@@ -914,10 +810,13 @@ span.handwriting {
         }
     }
 
-    /* Block "If" */
-    .block_if.lp-04 {
+    /* Block "Two in One" */
+    .two-in-one {
         padding: 60px 0;
+    }
 
+    /* Block "If" */
+    .block_if.lp-05 {
         .if-wrapper {
             grid-gap: 60px;
         }
@@ -933,10 +832,24 @@ span.handwriting {
         }
     }
 
+    /* Block "What Awaits You" */
+    .block_what-awaits-you.lp-05 {
+        padding-top: 100px;
+
+        .way-wrapper {
+            grid-gap: 20px;
+        }
+
+        ul li {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
     /* Block "Author" */
-    .block_author.lp-04 {
-        padding-top: 60px;
-        padding-bottom: 80px;
+    .block_author.lp-05 {
+        padding-top: 50px;
+        padding-bottom: 60px;
 
         .item-info {
             padding: 0;
@@ -956,60 +869,15 @@ span.handwriting {
         }
     }
 
-    /* Block "What Awaits You" */
-    .block_what-awaits-you.lp-04 {
-        padding: 60px 0;
-
-        .way-wrapper {
-            margin-top: 60px;
-        }
-
-        .way-wrapper+.way-wrapper {
-            margin-top: 60px;
+    /* Block "After Course" */
+    .block_after-course.lp-05 {
+        .items-list {
+            margin-right: 40%;
         }
 
         .bg-img-01 {
-            left: -10%;
-        }
-
-        .bg-img-02 {
             right: -10%;
-        }
-
-        .bg-img-03 {
-            left: -10%;
-        }
-
-        .item {
-            flex-basis: 60%;
-            grid-gap: 16px;
-        }
-
-        ul {
-            margin-top: 20px;
-        }
-
-        ul li+li {
-            margin-top: 20px;
-        }
-    }
-
-    /* Block "During Course" */
-    .block_during-course.lp-04 {
-        .dc-wrapper {
-            grid-gap: 30px;
-            margin-top: 40px;
-        }
-
-        .item+.item {
-            margin-top: 30px;
-        }
-    }
-
-    /* Block "After Course" */
-    .block_after-course.lp-04 {
-        .items-list {
-            margin-left: 40%;
+            max-width: 440px;
         }
 
         .item {
@@ -1022,7 +890,7 @@ span.handwriting {
     }
 
     /* Block "Price" */
-    .block_price.lp-04 {
+    .block_price.lp-05 {
         .bg-img-01 {
             right: -15%;
         }
@@ -1103,7 +971,7 @@ span.handwriting {
 @media screen and (max-width: 767.8px) {
 
     /* Block "Main" */
-    .block_main.lp-04 {
+    .block_main.lp-05 {
         background-position: center bottom;
 
         .main-text {
@@ -1126,8 +994,31 @@ span.handwriting {
         }
     }
 
+    /* Block "What Awaits You" */
+    .block_what-awaits-you.lp-05 {
+        padding-top: 80px;
+
+        .way-wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        .bg-img {
+            order: 1;
+            margin: 0 auto;
+            max-width: 480px;
+        }
+
+        .item {
+            order: 2;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: flex-start;
+            grid-gap: 20px;
+        }
+    }
+
     /* Block "Author" */
-    .block_author.lp-04 {
+    .block_author.lp-05 {
         padding-top: 40px;
         padding-bottom: 40px;
 
@@ -1144,6 +1035,8 @@ span.handwriting {
             order: 1;
             height: 400px;
             margin: 0 auto;
+            object-fit: cover;
+            object-position: top center;
         }
 
         .item-info {
@@ -1163,71 +1056,8 @@ span.handwriting {
         }
     }
 
-    /* Block "What Awaits You" */
-    .block_what-awaits-you.lp-04 {
-        padding: 40px 0;
-
-        .way-wrapper {
-            margin-top: 40px;
-            flex-direction: column;
-        }
-
-        .way-wrapper.right-side {
-            justify-content: flex-start;
-        }
-
-        .way-wrapper+.way-wrapper {
-            margin-top: 40px;
-        }
-
-        .bg-img-01,
-        .bg-img-02,
-        .bg-img-03 {
-            order: 1;
-            position: static;
-            top: 0;
-            right: 0;
-            transform: none;
-            margin: 0 auto;
-        }
-
-        .item {
-            order: 2;
-            margin-top: 20px;
-            flex-basis: 100%;
-        }
-    }
-
-    /* Block "During Course" */
-    .block_during-course.lp-04 {
-
-        .dc-wrapper {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr auto;
-        }
-
-        .items-list {
-            order: 2;
-        }
-
-        .cascade-wrapper {
-            order: 1;
-            padding: 0;
-            height: 400px;
-        }
-
-        .cascade {
-            width: 100%;
-            max-width: 400px;
-
-            img {
-                max-width: 360px;
-            }
-        }
-    }
-
     /* Block "After Course" */
-    .block_after-course.lp-04 {
+    .block_after-course.lp-05 {
         padding: 40px 0;
 
         .ac-wrapper {
@@ -1240,6 +1070,7 @@ span.handwriting {
             left: 0;
             transform: none;
             margin: 0 auto;
+            max-width: 400px;
         }
 
         .items-list {
@@ -1248,7 +1079,7 @@ span.handwriting {
     }
 
     /* Block "Price" */
-    .block_price.lp-04 {
+    .block_price.lp-05 {
         margin: 0;
         padding: 40px 0;
 
@@ -1384,10 +1215,14 @@ span.handwriting {
         }
     }
 
-    .block_main.lp-04 {
-        background-image: url('../images/lp-04/img_main-bg-sm.jpg');
+    .block_main.lp-05 {
+        background-image: url('../images/lp-05/img_main-bg-sm.jpg');
 
         .main-text {
+            .heading-main {
+                font-size: 28px;
+                line-height: 36px;
+            }
 
             p+a {
                 margin-top: 256px;
@@ -1395,10 +1230,13 @@ span.handwriting {
         }
     }
 
-    /* Block "If" */
-    .block_if.lp-04 {
+    /* Block "Two in One" */
+    .two-in-one {
         padding: 40px 0;
+    }
 
+    /* Block "If" */
+    .block_if.lp-05 {
         .if-wrapper {
             grid-gap: 40px;
         }
@@ -1415,7 +1253,7 @@ span.handwriting {
     }
 
     /* Block "Author" */
-    .block_author.lp-04 {
+    .block_author.lp-05 {
         .item-photo {
             height: 320px;
         }

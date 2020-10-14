@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Preloading Styles -->
+    <link rel="preload" href="fonts/fonts.css" as="style">
+    <link rel="preload" href="styles/main-02.css" as="style">
+    <!-- Preloading Scripts -->
+    <link rel="preload" href="scripts/jquery-3.5.1.js" as="script">
+    <link rel="preload" href="scripts/main.js" as="script">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main-02.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico">
+    <title>Как пережить праздник</title>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+    </div>
+    <script type="text/javascript">
+        var hellopreloader = document.getElementById("hellopreloader_preload");
+
+        function fadeOutnojquery(el) {
+            el.style.opacity = 1;
+            var interhellopreloader = setInterval(function () {
+                el.style.opacity = el.style.opacity - 0.05;
+                if (el.style.opacity <= 0.05) {
+                    clearInterval(interhellopreloader);
+                    hellopreloader.style.display = "none";
+                }
+            }, 16);
+        }
+        window.onload = function () {
+            setTimeout(function () {
+                fadeOutnojquery(hellopreloader);
+            }, 500); // Время прелоадера 0.5s
+        };
+    </script>
+    <style>
+        #hellopreloader>p {
+            display: none;
+        }
+
+        #hellopreloader_preload {
+            display: block;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--color_text-pale) url("images/preloader_tail-spin.svg") center center no-repeat;
+            background-size: 48px;
+        }
+    </style>
+
+    <div class="block_main lp-05">
+        <div class="container">
+            <div class="header">
+                <img class="header-logo" src="images/logo-dark.svg" alt="Логотип">
+                <div class="header-links">
+                    <a class="link" href="mailto:vesbalans@gmail.com">Напишите нам
+                        <img src="images/icon_mail-us.svg">
+                    </a>
+                    <a class="link" href="https://lms.vesbalans.ru/">Личный кабинет
+                        <img src="images/icon_log-in.svg">
+                    </a>
+                </div>
+            </div>
+
+            <div class="main-text">
+                <p class="heading-main">
+                    Онлайн курс <br>
+                    <span>
+                        «Как пережить праздник
+                        и не набрать лишний вес»
+                    </span>
+                </p>
+
+                <p class="subheading">
+                    Сделайте свой праздник ярким!
+                    Забудьте про запреты!
+                    <span>99% женщин, прошедших этот мастер-класс, теперь с лёгкостью встречают любой праздник,</spa> не
+                        набирая
+                        лишних килограмм, но позволяя себе в еде практически всё!
+                </p>
+
+                <a href="#" class="btn_more-about">
+                    <span>Подробно о курсе</span>
+                    <img src="images/arrow_bottom-white.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="two-in-one">
+        <div class="container">
+            <div class="block_if lp-05">
+                <div class="title">
+                    <span class="handwriting text-cyan">
+                        Если:<img src="images/lp-05/line_if.svg">
+                    </span>
+                </div>
+
+                <div class="if-wrapper">
+                    <div class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <p>Боитесь, что после праздника <span class="text-cyan">снова появятся лишние килограммы</span>,
+                            которые Вы недавно успели сбросить</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <p>Хотите быстро <span class="text-cyan">привести
+                                своё тело в порядок перед праздниками</span>, ответственными мероприятиями, днями
+                            рождения
+                            близких и просто так</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <p><span class="text-cyan">Всегда срываетесь после праздников</span>, а потом долго
+                            возвращаетесь к
+                            правильному питанию и небольшим порциям</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <p>Занимаетесь в данный момент активным снижением веса и хотите <span class="text-cyan">пройти
+                                праздничное изобилие без последствий для фигуры</span></p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <p><span class="text-cyan">Вам предстоит поездка</span>, в которой невозможно организовать
+                            упорядоченное питание, и Вы переживаете за свой вес</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <p><span class="text-cyan">Просто хотите привести
+                                своё тело в порядок</span> и сбросить
+                            до 3 кг за 7 дней!</p>
+                    </div>
+                </div>
+
+                <div class="if-text">
+                    <p class="heading-md"><span>Тогда онлайн курс</span> коррекции веса <br> «Как пережить праздник и не
+                        набрать лишний вес» <br>
+                        <span class="handwriting text-green">— это то, что вы ищете!<img
+                                src="images/lp-05/line_looking-for.svg">
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="block_what-awaits-you lp-05">
+                <p class="heading-lg"><span>Узнайте подробнее, что вас ожидает</span> в&nbsp;программе:</p>
+                <div class="way-wrapper">
+                    <div class="item">
+                        <div class="circles circles-blue">1.</div>
+                        <div>
+                            <p class="heading-sm">Экспресс-марафон для
+                                снижения веса:</p>
+                            <ul class="arrow-blue">
+                                <li>Практические рекомендации: как правильно подготовить организм к празднику, чтобы не
+                                    набрать лишний вес.</li>
+                                <li>Программа похудения на 7 дней для разгона метаболизма и снижения веса до 6 кг! Если
+                                    вам нужно срочно прийти в форму перед праздником!</li>
+                                <li>Методические материалы: Как закупать и комбинировать продукты, чтобы приготовить
+                                    праздничное меню. Как подобрать и приготовить полезные альтернативы вредным
+                                    продуктам (колбасы, майонезы, соусу, кетчупы и т.д.).</li>
+                                <li>Специально разработанное меню питания в праздничные дни.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img class="bg-img" src="images/lp-05/img_what-awaits-you-01.png">
+                </div>
+                <div class="way-wrapper">
+                    <img class="bg-img" src="images/lp-05/img_what-awaits-you-02.png">
+                    <div class="item">
+                        <div class="circles circles-teal">1.</div>
+                        <div>
+                            <p class="heading-sm">Детокс марафон,
+                                чтобы быстро
+                                избавиться от лишних кг после
+                                праздников:</p>
+                            <ul class="arrow-teal">
+                                <li>Программа похудения детокс-марафон, чтобы быстро и без последствий сбросить
+                                    набранные
+                                    за праздничные застолья кг.</li>
+                                <li>Меню для очищения печени и кишечника после жирной пищи и алкоголя.</li>
+                                <li>Меню для восстановления микрофлоры кишечника и работы ЖКТ после праздничных
+                                    перееданий.</li>
+                                <li>Рецепты травяных настоев для улучшения метаболизма и очищения организма.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="way-wrapper">
+                    <div class="item">
+                        <div class="circles circles-cyan">1.</div>
+                        <div>
+                            <p class="heading-sm">Тренировки для всех уровней подготовки:</p>
+                            <ul class="arrow-cyan">
+                                <li>Тренировки на гибкость и пластику и проработки глубинных мышц, стабилизаторов.</li>
+                                <li>Силовые тренировки для поднятия мышечного тонуса.</li>
+                                <li>Танцевальная тренировки для отличного настроения и развития координации.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img class="bg-img" src="images/lp-05/img_what-awaits-you-03.png">
+                </div>
+                <div class="way-wrapper">
+                    <img class="bg-img" src="images/lp-05/img_what-awaits-you-04.png">
+                    <div class="item">
+                        <div class="circles circles-green">4.</div>
+                        <div>
+                            <p class="heading-sm">Аутофагия – клеточное
+                                очищение:</p>
+                            <ul class="arrow-green">
+                                <li>Подготовка и запуск аутофагии – клеточного очищения и омоложения - в организме.</li>
+                                <li>Новые меню для проведения аутофагии и очищения клеток от токсинов.</li>
+                                <li>Восстановления водного баланса в организме после обезвоживания из-за принятия
+                                    алкоголя.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_author lp-05">
+        <div class="container">
+            <p class="heading-lg"><span>Автор и ведущий</span> тренинга</p>
+            <div class="author-item">
+                <img class="item-photo" src="images/lp-05/img_author-01.jpg" alt="Кристина Шереметьева">
+                <div class="item-info">
+                    <p class="heading-md"><span>Кристина Шереметьева</span></p>
+                    <p class="subheading">Основатель и руководитель
+                        «Международного центра похудения
+                        Кристины Шереметьевой»</p>
+                    <div class="skills-list">
+                        <div class="skill">
+                            <img src="images/icon_author-education-cyan.svg">
+                            <p>Выпускница факультета психологии&nbsp;МГУ</p>
+                        </div>
+                        <div class="skill">
+                            <img src="images/icon_author-diploma-cyan.svg">
+                            <p>Кандидат психологических наук</p>
+                        </div>
+                        <div class="skill">
+                            <img src="images/icon_author-experience-cyan.svg">
+                            <p>Опыт работы в области психологии похудения более 12 лет</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_after-course lp-05">
+        <div class="container">
+            <div class="ac-text">
+                <p class="heading-lg">Пройдя программу «Как пережить праздник и не набрать вес»,
+                    <span class="handwriting text-green">Вы&nbsp;сможете:
+                        <img src="images/lp-05/line_you-can.svg">
+                    </span>
+                </p>
+            </div>
+            <div class="ac-wrapper">
+                <img class="bg-img-01" src="images/lp-05/img_after-course-01.jpg">
+                <div class="items-list">
+                    <p class="item">
+                        <img src="images/icon_checked-green.svg">
+                        <span>Поддержать скорость метаболизма</span> и не дать лишним калориям праздника отложиться про
+                        запас
+                    </p>
+                    <p class="item">
+                        <img src="images/icon_checked-green.svg">
+                        <span>Подготовиться к праздникам, скинуть лишние кг</span> и выглядеть
+                        на празднике неотразимой
+                    </p>
+                    <p class="item">
+                        <img src="images/icon_checked-green.svg">
+                        <span>Полностью снять воздействие токсинов,</span> поступивших в организм вместе с алкоголем и
+                        жирной пищей во время праздников
+                    </p>
+                    <p class="item">
+                        <img src="images/icon_checked-green.svg">
+                        <span>Сбросить набранные за праздники несколько лишних килограмм</span> и вернуться к своему
+                        нормальному весу
+                    </p>
+                    <p class="item">
+                        <img src="images/icon_checked-green.svg">
+                        <span>Снизить уровень вредного холестерина,</span> который поднялся из-за употребления жирной
+                        пищи
+                    </p>
+                    <p class="item">
+                        <img src="images/icon_checked-green.svg">
+                        <span>Подготовить организм к будущему перееданию.</span> Избежать проблем с ЖКТ
+                    </p>
+                    <p class="item">
+                        <img src="images/icon_checked-green.svg">
+                        <span>Вернуть мышцам тонус,</span> даже без посещения спортзала
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_price lp-05">
+        <div class="container">
+            <div class="price-wrapper">
+                <img class="bg-img-01" src="images/lp-05/img_price-01.jpg">
+                <img class="bg-img-02" src="images/lp-05/img_price-02.jpg">
+                <div class="item-price">
+                    <p class="heading-md">
+                        <span>Стоимость курса:</span>
+                    </p>
+                    <div class="old-price">
+                        <div class="suptitle">обычная цена:</div>
+                        <div class="price">2990 ₽</div>
+                    </div>
+                    <div class="new-price">
+                        <div class="suptitle">Цена сегодня:</div>
+                        <div class="price">1590 ₽</div>
+                    </div>
+                    <a href="#" class="btn_buy-course">Купить курс со скидкой</a>
+                    <p class="subtitle">(доступ к программе бессрочный)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="copyright">
+                    <p>© 2020, Международный центр <br>
+                        похудения Кристины Шереметьевой</p>
+                    <img src="images/icon_visa-mastercard.svg" alt="visa and mastercard">
+                </div>
+                <div class="terms-of-use">
+                    <a href="#">Условия обработки персональных&nbsp;данных</a> <br>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+                <div class="socials">
+                    <a href="https://instagram.com/dietolog_kristina/" target="_blank">
+                        <img src="images/icon_social-instagram.svg">
+                    </a>
+                    <a href="https://vk.com/club148320189">
+                        <img src="images/icon_social-vkontakte.svg" target="_blank">
+                    </a>
+                    <a href="https://facebook.com/dietologkristina/">
+                        <img src="images/icon_social-facebook.svg" target="_blank">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCMoQHRz_2Hbp8Lb6rZW22_w">
+                        <img src="images/icon_social-youtube.svg" target="_blank">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- "Back to Top" Button -->
+    <a id="back-to-top">
+        <img src="images/btn_back-to-top.svg" alt="кнопка наверх">
+    </a>
+
+    <!-- Scripts -->
+    <script src="scripts/jquery-3.5.1.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
