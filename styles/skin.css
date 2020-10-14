@@ -208,31 +208,6 @@ span.handwriting img {
 .block_main .link:active {
   filter: opacity(100%);
 }
-.block_main .btn_more-about {
-  justify-self: end;
-  background: var(--gradient_button);
-  box-shadow: var(--shadow_button);
-  color: white;
-  width: 100%;
-  max-width: 256px;
-  height: 60px;
-  font-weight: 700;
-  padding: 12px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
-}
-.block_main .btn_more-about span + img {
-  margin-left: 12px;
-}
-.block_main .btn_more-about:hover {
-  box-shadow: var(--shadow_button-hover);
-}
-.block_main .btn_more-about:active {
-  box-shadow: var(--shadow_button-active);
-}
 .block_main.lp-04 {
   background-color: var(--color_bg-gray);
   background-image: url('../images/lp-04/img_main-bg.jpg');
@@ -257,6 +232,31 @@ span.handwriting img {
 }
 .block_main.lp-04 .main-text p + a {
   margin-top: 40px;
+}
+.block_main.lp-04 .btn_main {
+  justify-self: end;
+  background: var(--gradient_button);
+  box-shadow: var(--shadow_button);
+  color: white;
+  width: 100%;
+  max-width: 256px;
+  height: 60px;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.block_main.lp-04 .btn_main span + img {
+  margin-left: 12px;
+}
+.block_main.lp-04 .btn_main:hover {
+  box-shadow: var(--shadow_button-hover);
+}
+.block_main.lp-04 .btn_main:active {
+  box-shadow: var(--shadow_button-active);
 }
 /* Block "If" */
 .block_if.lp-04 {
@@ -723,9 +723,6 @@ span.handwriting img {
   .block_main .link img {
     width: 18px;
   }
-  .block_main .btn_more-about {
-    max-width: 240px;
-  }
   .block_main.lp-04 {
     background-position: 192px bottom;
   }
@@ -736,6 +733,9 @@ span.handwriting img {
   }
   .block_main.lp-04 .main-text p + p {
     margin-top: 40px;
+  }
+  .block_main.lp-04 .btn_main {
+    max-width: 240px;
   }
   /* Block "If" */
   .block_if.lp-04 {
@@ -1100,16 +1100,16 @@ span.handwriting img {
   .block_main .link img {
     width: 14px;
   }
-  .block_main .btn_more-about {
-    max-width: 224px;
-    height: 48px;
-    padding: 8px;
-  }
   .block_main.lp-04 {
     background-image: url('../images/lp-04/img_main-bg-sm.jpg');
   }
   .block_main.lp-04 .main-text p + a {
     margin-top: 256px;
+  }
+  .block_main.lp-04 .btn_main {
+    max-width: 224px;
+    height: 48px;
+    padding: 8px;
   }
   /* Block "If" */
   .block_if.lp-04 {
