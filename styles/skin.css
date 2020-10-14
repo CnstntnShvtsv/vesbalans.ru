@@ -639,22 +639,22 @@ span.handwriting img {
 .footer-wrapper .terms-of-use a + a {
   margin-top: 10px;
 }
-.footer-wrapper .socials {
+.footer-wrapper .social-icons {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.footer-wrapper .socials img {
+.footer-wrapper .social-icons img {
   width: 46px;
   height: auto;
   margin-left: 14px;
 }
-.footer-wrapper .socials a:hover img {
+.footer-wrapper .social-icons a:hover img {
   opacity: 0.8;
   filter: saturate(0.6);
 }
-.footer-wrapper .socials a:active img {
+.footer-wrapper .social-icons a:active img {
   opacity: 1;
   filter: saturate(0.4);
 }
@@ -1044,10 +1044,10 @@ span.handwriting img {
   .footer-wrapper .terms-of-use {
     text-align: center;
   }
-  .footer-wrapper .socials {
+  .footer-wrapper .social-icons {
     justify-content: center;
   }
-  .footer-wrapper .socials img {
+  .footer-wrapper .social-icons img {
     width: 40px;
     margin-left: 12px;
   }
