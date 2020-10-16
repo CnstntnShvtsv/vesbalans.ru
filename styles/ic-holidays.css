@@ -162,7 +162,7 @@
 .block_author.lp-05 .skill {
   padding-left: 80px;
   position: relative;
-  color: var(--color_text-pale);
+  color: var(--color_blue-gray);
 }
 .block_author.lp-05 .skill img {
   position: absolute;
