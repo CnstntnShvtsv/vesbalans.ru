@@ -7,7 +7,7 @@
   background-size: contain;
 }
 .block_main.lp-05 .main-text {
-  background: linear-gradient(90deg, var(--color_bg-beige) 60%, transparent);
+  background: linear-gradient(90deg, var(--color_bg-beige) 50%, transparent);
   padding-top: 56px;
   padding-bottom: 80px;
   width: 100%;
@@ -137,7 +137,7 @@
   max-width: 560px;
   height: 440px;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   border-radius: 8px;
 }
 .block_author.lp-05 .item-info {
@@ -435,7 +435,7 @@
     background-position: center bottom;
   }
   .block_main.lp-05 .main-text {
-    background: linear-gradient(180deg, var(--color_bg-beige) 40%, transparent 60%);
+    background: linear-gradient(180deg, var(--color_bg-beige), transparent 50%);
     padding: 20px 0;
     max-width: 100%;
     display: flex;
@@ -486,8 +486,6 @@
     order: 1;
     height: 400px;
     margin: 0 auto;
-    object-fit: cover;
-    object-position: top center;
   }
   .block_author.lp-05 .item-info {
     order: 2;

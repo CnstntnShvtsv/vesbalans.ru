@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Preloading Styles -->
+    <link rel="preload" href="fonts/fonts.css" as="style">
+    <link rel="preload" href="styles/main.css" as="style">
+    <link rel="preload" href="styles/training-foodemotion.css" as="style">
+    <!-- Preloading Scripts -->
+    <link rel="preload" href="scripts/jquery-3.5.1.js" as="script">
+    <link rel="preload" href="scripts/main.js" as="script">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/training-foodemotion.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico">
+
+    <meta property="og:title"
+        content="Психологический тренинг-интенсив «Как избавиться от тяги к сладкому, перестать срываться и заедать стресс»" />
+    <meta property="og:url" content="https://vesbalans.ru/land/training-foodemotion" />
+    <meta property="og:description"
+        content="Единственный в РФ онлайн-центр безвозвратного похудения, работающий по уникальной методике разгона метаболизма." />
+    <meta property="og:image" content="https://vesbalans.ru/info/img/items/img_2.jpg" />
+    <meta property="og:type" content="article" />
+
+    <title>Как избавиться от тяги к сладкому, перестать срываться и заедать стресс | Международный центр похудения
+        Кристины Шереметьевой</title>
+</head>
+
+<body>
+    <!-- [if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com">upgrade your browser</a> to improve your experience and security.</p><![endif] -->
+
+    <!-- Preloader -->
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+    </div>
+    <script type="text/javascript">
+        var hellopreloader = document.getElementById("hellopreloader_preload");
+
+        function fadeOutnojquery(el) {
+            el.style.opacity = 1;
+            var interhellopreloader = setInterval(function () {
+                el.style.opacity = el.style.opacity - 0.05;
+                if (el.style.opacity <= 0.05) {
+                    clearInterval(interhellopreloader);
+                    hellopreloader.style.display = "none";
+                }
+            }, 16);
+        }
+        window.onload = function () {
+            setTimeout(function () {
+                fadeOutnojquery(hellopreloader);
+            }, 500); // Время прелоадера 0.5s
+        };
+    </script>
+    <style>
+        #hellopreloader>p {
+            display: none;
+        }
+
+        #hellopreloader_preload {
+            display: block;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--color_text-pale) url("images/preloader_tail-spin.svg") center center no-repeat;
+            background-size: 48px;
+        }
+    </style>
+
+    <div class="block_main lp-03">
+        <div class="container">
+            <div class="header">
+                <img class="header-logo" src="images/logo-dark.svg" alt="Логотип">
+                <div class="header-links">
+                    <a class="link" href="mailto:vesbalans@gmail.com">Напишите нам
+                        <svg width="22" height="16" viewBox="0 0 22 16" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.786 15.7492C0.577713 15.7492 0.377942 15.6665 0.230567 15.5193C0.0831924 15.3721 0.000264996 15.1724 0 14.9642V1.42316L10.5 10.0742C10.6408 10.1902 10.8175 10.2537 11 10.2537C11.1825 10.2537 11.3592 10.1902 11.5 10.0742L22 1.53516V14.9642C22 15.1726 21.9172 15.3725 21.7698 15.5199C21.6224 15.6673 21.4225 15.7502 21.214 15.7502L0.786 15.7492ZM0.786 0.0351562H21.214C21.2533 0.0399065 21.2921 0.0479345 21.33 0.0591563L11 8.44816L0.786 0.0351562Z" />
+                        </svg>
+                    </a>
+                    <a class="link" href="https://lms.vesbalans.ru/">Личный кабинет
+                        <svg width="22" height="23" viewBox="0 0 22 23" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.786001 22.0357C0.577541 22.0357 0.377619 21.9528 0.230215 21.8054C0.0828116 21.658 1.14819e-06 21.4581 1.14819e-06 21.2497C-0.000793338 19.9409 0.410738 18.6651 1.17616 17.6035C1.94159 16.5419 3.022 15.7484 4.264 15.3357L7.609 14.2207C7.68893 14.1938 7.77267 14.1799 7.857 14.1797H14.143C14.2273 14.1799 14.3111 14.1938 14.391 14.2207L17.736 15.3357C18.978 15.7484 20.0584 16.5419 20.8238 17.6035C21.5893 18.6651 22.0008 19.9409 22 21.2497C22 21.4581 21.9172 21.658 21.7698 21.8054C21.6224 21.9528 21.4225 22.0357 21.214 22.0357H0.786001ZM6.286 7.89266V4.74966C6.286 3.49929 6.78271 2.30014 7.66685 1.416C8.55099 0.531861 9.75014 0.0351563 11.0005 0.0351562C12.2509 0.0351563 13.45 0.531861 14.3342 1.416C15.2183 2.30014 15.715 3.49929 15.715 4.74966V7.89266C15.715 9.14302 15.2183 10.3422 14.3342 11.2263C13.45 12.1105 12.2509 12.6072 11.0005 12.6072C9.75014 12.6072 8.55099 12.1105 7.66685 11.2263C6.78271 10.3422 6.286 9.14302 6.286 7.89266Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="main-text">
+                <p class="subheading">
+                    Психологический тренинг-интенсив
+                </p>
+                <p class="heading-main">
+                    «<span>Как избавиться</span>
+                    от&nbsp;тяги к сладкому,
+                    перестать срываться
+                    и&nbsp;заедать стресс»
+                </p>
+
+                <a href="#more-details" class="btn_main">
+                    <span>Подробно о курсе</span>
+                    <img src="images/arrow_bottom-white.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_if lp-03" id="more-details">
+        <div class="container">
+            <div class="if-wrapper">
+                <div class="item">
+                    <p><span>Вы часто едите сладкое,</span> чтобы поднять себе настроение, заесть стресс или просто
+                        расслабиться.</p>
+                </div>
+                <div class="item">
+                    <p><span>Вы не можете отказаться от еды,</span> даже если уже сыты.</p>
+                </div>
+                <div class="item">
+                    <p><span>Вы страдаете от ночного (вечернего) голода,</span> и никак не можете от него избавиться.
+                    </p>
+                </div>
+                <div class="item">
+                    <p><span>Вы любите есть за компанию</span> и вечно что-то жуёте в течение дня</p>
+                </div>
+                <div class="item">
+                    <p><span>Вы постоянно много едите,</span> ругаете себя за переедание, но не начинаете есть меньше.
+                    </p>
+                </div>
+                <div class="item">
+                    <p><span>Вы никак не можете похудеть,</span> потому что постоянно срываетесь
+                        в еде.</p>
+                </div>
+                <div class="if-arrows">
+                    <span class="handwriting text-cyan">Если:<img src="images/lp-03/line_if.svg"></span>
+                </div>
+            </div>
+            <div class="if-text">
+                <p class="heading-md"><span>Значит этот тренинг создан специально</span> <span
+                        class="handwriting text-green">для&nbsp;Вас!<img src="images/lp-03/line_for-you.svg"></span>
+                    <br>
+                    Решить проблему психологического переедания на самом деле просто!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_author lp-03">
+        <div class="container">
+            <p class="heading-lg"><span>Ведущий</span> курса</p>
+            <div class="author-item">
+                <img class="item-photo" src="images/lp-03/img_author-01.jpg" alt="Кристина Шереметьева">
+                <div class="item-info">
+                    <p class="heading-md"><span>Кристина Шереметьева</span></p>
+                    <p class="subheading">Руководитель «Международного центра похудения Кристины Шереметьевой»</p>
+                    <div class="skills-list">
+                        <div class="skill">
+                            <img src="images/icon_author-education-green.svg">
+                            <p>Выпускница факультета психологии&nbsp;МГУ</p>
+                        </div>
+                        <div class="skill">
+                            <img src="images/icon_author-diploma-green.svg">
+                            <p>Кандидат психологических наук</p>
+                        </div>
+                        <div class="skill">
+                            <img src="images/icon_author-nutritionist-green.svg">
+                            <p>Диетолог</p>
+                        </div>
+                        <div class="skill">
+                            <img src="images/icon_author-experience-green.svg">
+                            <p>Опыт работы в области психологии похудения более 12 лет</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="author-item">
+                <div class="item-info">
+                    <p class="heading-md"><span>Крухмалева Наталья</span></p>
+                    <p class="subheading">Косметолог-эстетист</p>
+                    <div class="skills-list">
+                        <div class="skill">
+                            <img src="images/icon_author-diploma-green.svg">
+                            <p>Сертифицированный специалист по техникам
+                                миофасциального, букального,глубокотканного массажа и самомассажа</p>
+                        </div>
+                        <div class="skill">
+                            <img src="images/icon_author-writer-green.svg">
+                            <p>Автор многочисленных программ и марафонов
+                                по структурным изменениям и омоложению
+                                лица и тела с помощью массажных техник</p>
+                        </div>
+                        <div class="skill">
+                            <img src="images/icon_author-experience-green.svg">
+                            <p>Опыт работы 10 лет</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="item-photo" src="images/lp-03/img_author-02.jpg" alt="Крухмалева Наталья">
+            </div>
+        </div>
+    </div>
+
+    <div class="block_what-awaits-you lp-03">
+        <div class="container">
+            <p class="heading-lg"><span>Что ожидает Вас</span> в практическом курсе <br>
+                «Моя красивая кожа»:</p>
+            <div class="way-wrapper right-side">
+                <img class="bg-img-01" src="images/lp-03/img_what-awaits-you-01.jpg">
+                <div class="item">
+                    <div class="circles circles-blue">1.</div>
+                    <div>
+                        <p class="heading-sm">Избавляемся от целлюлита,
+                            отёков и выравниваем рельеф</p>
+                        <ul class="arrow-blue">
+                            <li>Вы узнаете о причинах и механизмах формирования целлюлита у женщин.</li>
+                            <li>Проведёте самодиагностику личных причин появления целлюлита.</li>
+                            <li>Получите методическое пособие по обёртываниям для устранения сухости, повышения тонуса,
+                                вывода лишней жидкости.</li>
+                            <li>Освоите техники антицеллюлитного и лимфодренажного самомассажа для профилактики застоя
+                                лимфы и отёков, вывода лишней межклеточной жидкости, уменьшения объёмов и выравнивания
+                                подкожно-жировой клетчатки.</li>
+                            <li>Овладеете техникой восстановления функциональности сальных желез для профилактики
+                                целлюлита.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="way-wrapper">
+                <img class="bg-img-02" src="images/lp-03/img_what-awaits-you-02.jpg">
+                <div class="item">
+                    <div class="circles circles-teal">1.</div>
+                    <div>
+                        <p class="heading-sm">Избавляемся от сухости,
+                            слабого тонуса мышц и трофических застоев в тканях</p>
+                        <ul class="arrow-teal">
+                            <li>Вы получите методическое пособие по скрабированиям для улучшения циркуляции крови и
+                                очищения кожи от ороговевших частиц.</li>
+                            <li>Овладеете методикой контрастного душа для повышения тургора кожи и устранения застойных
+                                явлений.</li>
+                            <li>Освоите техники раскрытия пор, насыщения тканей кислородом, повышения мышечного тонуса.
+                            </li>
+                            <li>Освоите техники разгона клеточного метаболизма для ускорения регенерации тканей и
+                                снижения процента жировой ткани в организме.</li>
+                            <li>Освоите методику очищения клеток от токсинов и шлаков для очищения и оздоровления кожи.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="way-wrapper right-side">
+                <img class="bg-img-03" src="images/lp-03/img_what-awaits-you-03.jpg">
+                <div class="item">
+                    <div class="circles circles-cyan">1.</div>
+                    <div>
+                        <p class="heading-sm">Восстанавливаем овал лица, избавляемся от мимических морщин и омолаживаем
+                            кожу лица</p>
+                        <ul class="arrow-cyan">
+                            <li>Вы узнаете, как изменения осанки, мышц шеи и лица влияют на скорость старения кожи.
+                            </li>
+                            <li>Овладеете уникальными техниками мышечной релаксации для сдвига лицевых тканей по вектору
+                                молодости и устранения отёчности, птоза, возрастных и мимических морщин.</li>
+                            <li>Проработаете глубокие каркасные мышцы лица, восстановите их упругость, вернёте чёткость
+                                овалу лица.</li>
+                            <li>Освоите мощный комплекс упражнений для корректировки осанки, восстановления статики шеи,
+                                коррекции второго подбородка.</li>
+                            <li>Пройдёте мастер-класс по техникам самомассажа для коррекции носогубных складок, губ,
+                                лба.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_during-course lp-03">
+        <div class="container">
+            <div class="dc-text">
+                <p class="heading-lg">
+                    Во время <span>практического курса <br>
+                        «Моя красивая кожа»</span> Вы
+                    <span class="handwriting text-teal">получаете:<img src="images/lp-03/line_you-will-get.svg"></span>
+                </p>
+            </div>
+            <div class="dc-wrapper">
+                <div class="items-list">
+                    <div class="item">
+                        <span class="bg-circle"></span>
+                        <img src="images/lp-03/icon_during-course-01.svg">
+                        <p>Доступ к <span>личному кабинету с методическими материалами.</span> Все материалы вы сможете
+                            распечатать и пользоваться ими в будущем. (Все техники предоставлены с пошаговыми
+                            инструкциями!)</p>
+                    </div>
+                    <div class="item">
+                        <span class="bg-circle"></span>
+                        <img src="images/lp-03/icon_during-course-02.svg">
+                        <p>Доступ к видео мастер-классу по техникам <span>антицеллюлитного и лимфодренажного
+                                массажа</span> самомассажа.</p>
+                    </div>
+                    <div class="item">
+                        <span class="bg-circle"></span>
+                        <img src="images/lp-03/icon_during-course-03.svg">
+                        <p>Доступ к видео мастер-классу по техникам <span>самомассажа для лица, шеи и зоны
+                                декольте</span> для омоложения кожи и восстановления упругости глубинных лицевых мышц.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <span class="bg-circle"></span>
+                        <img src="images/lp-03/icon_during-course-04.svg">
+                        <p>Техники <span>обёртываний и скрабирований</span> для повышения тонуса кожи, выведения лишней
+                            жидкости, выравнивания подкожно-жировой клетчатки.</p>
+                    </div>
+                    <div class="item">
+                        <span class="bg-circle"></span>
+                        <img src="images/lp-03/icon_during-course-05.svg">
+                        <p>Техники <span>контрастного душа</span> для снижения веса и ускорения метаболизма кожи.</p>
+                    </div>
+                    <div class="item">
+                        <span class="bg-circle"></span>
+                        <img src="images/lp-03/icon_during-course-06.svg">
+                        <p>Техники <span>коррекции осанки</span> для восстановления овала лица, устранения возрастного
+                            птоза (провисания тканей), мимических морщин.
+                        </p>
+                    </div>
+                </div>
+                <div class="cascade">
+                    <img src="images/lp-03/img_during-course-03.jpg">
+                    <img src="images/lp-03/img_during-course-02.jpg">
+                    <img src="images/lp-03/img_during-course-01.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_after-course lp-03">
+        <div class="container">
+            <div class="ac-text">
+                <p class="heading-lg">
+                    <span>После</span> практического курса <br>
+                    «Моя красивая кожа»
+                    <span class="handwriting text-blue">Вы:<img src="images/lp-03/line_you.svg"></span>
+                </p>
+            </div>
+            <div class="ac-wrapper">
+                <img class="bg-img-01" src="images/lp-03/img_after-course-01.jpg">
+                <div class="items-list">
+                    <p class="item">
+                        <img src="images/icon_checked-blue.svg">
+                        <span>Избавитесь от «апельсиновой» корки на бёдрах и ягодицах,</span> улучшите рельеф. Ваше
+                        тело станет более привлекательным, а кожа – гладкой и шелковистой.
+                    </p>
+                    <p class="item">
+                        <img src="images/icon_checked-blue.svg">
+                        <span>Ускорите метаболизм</span> в коже после похудения, вернёте ей тонус и поможете
+                        восстановиться. Обвисшая кожа после похудения подтянется. Вам начнёт нравиться ваше
+                        отражение в зеркале!
+                    </p>
+                    <p class="item">
+                        <img src="images/icon_checked-blue.svg">
+                        <span>Подтянете каркасные мышцы лица,</span> восстановите овал, избавитесь от второго
+                        подбородка, уменьшите мимические морщины, улучшите цвет и структуру кожи. Вы будете
+                        выглядеть очень привлекательно и на 5-6 лет моложе!
+                    </p>
+                    <p class="item">
+                        <img src="images/icon_checked-blue.svg">
+                        <span>Омолодите кожу шеи и декольте,</span> подтянете мышцы. Вы с гордостью сможете носить
+                        любимые платья и блузы с глубоким вырезом!
+                    </p>
+                    <p class="item">
+                        <img src="images/icon_checked-blue.svg">
+                        <span>Забудете про отёки ног</span> и лишние сантиметры на бёдрах и ягодицах. Почувствуете
+                        лёгкость во всём теле!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_price lp-03">
+        <div class="container">
+            <div class="price-wrapper">
+                <img class="bg-img-01" src="images/lp-03/img_price-01.jpg">
+                <img class="bg-img-02" src="images/lp-03/img_price-02.jpg">
+                <div class="item-price">
+                    <p class="heading-md">
+                        <span>Стоимость курса:</span>
+                    </p>
+                    <div class="old-price">
+                        <div class="suptitle">обычная цена:</div>
+                        <div class="price">2990 ₽</div>
+                    </div>
+                    <div class="new-price">
+                        <div class="suptitle">Цена сегодня:</div>
+                        <div class="price">1690 ₽</div>
+                    </div>
+                    <a href="https://lms.vesbalans.ru/lollipop_stress" class="btn_buy-course">Купить курс со скидкой</a>
+                    <p class="subtitle">(доступ к программе бессрочный)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="copyright">
+                    <p>© 2020, Международный центр <br>
+                        похудения Кристины Шереметьевой</p>
+                    <img src="images/icon_visa-mastercard.svg" alt="visa and mastercard">
+                </div>
+                <div class="terms-of-use">
+                    <a href="#">Условия обработки персональных&nbsp;данных</a> <br>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+                <div class="footer_social-list">
+                    <a href="https://instagram.com/dietolog_kristina/" target="_blank">
+                        <img src="images/icon_social-instagram.svg">
+                    </a>
+                    <a href="https://vk.com/club148320189">
+                        <img src="images/icon_social-vkontakte.svg" target="_blank">
+                    </a>
+                    <a href="https://facebook.com/dietologkristina/">
+                        <img src="images/icon_social-facebook.svg" target="_blank">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCMoQHRz_2Hbp8Lb6rZW22_w">
+                        <img src="images/icon_social-youtube.svg" target="_blank">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- "Back to Top" Button -->
+    <a id="back-to-top">
+        <img src="images/btn_back-to-top.svg" alt="кнопка наверх">
+    </a>
+
+    <!-- Scripts -->
+    <script src="scripts/jquery-3.5.1.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
