@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="button-play" data-name="button-play" transform="translate(-620 -2629)">
+    <circle id="button" data-name="button" cx="40" cy="40" r="40" transform="translate(620 2629)" fill="#fff"/>
+    <path id="play" data-name="play" d="M13.5,0,27,20H0Z" transform="translate(672 2656) rotate(90)" fill="#233746"/>
+  </g>
+</svg>

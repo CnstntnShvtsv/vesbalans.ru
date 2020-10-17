@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Preloading Styles -->
+    <link rel="preload" href="fonts/fonts.css" as="style">
+    <link rel="preload" href="styles/main.css" as="style">
+    <link rel="preload" href="styles/onlinetraining.css" as="style">
+    <!-- Preloading Scripts -->
+    <link rel="preload" href="scripts/jquery-3.5.1.js" as="script">
+    <link rel="preload" href="scripts/main.js" as="script">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/onlinetraining.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico">
+
+    <meta property="og:title" content="Курс онлайн-тренировок для женщин «Легко быть стройной!»" />
+    <meta property="og:url" content="https://vesbalans.ru/land/onlinetraining" />
+    <meta property="og:description"
+        content="Единственный в РФ онлайн-центр безвозвратного похудения, работающий по уникальной методике разгона метаболизма." />
+    <meta property="og:image" content="https://vesbalans.ru/info/img/items/img_3.jpg" />
+    <meta property="og:type" content="article" />
+
+    <title>Курс онлайн-тренировок для женщин «Легко быть стройной!» | Международный центр похудения Кристины
+        Шереметьевой</title>
+</head>
+
+<body>
+    <!-- [if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com">upgrade your browser</a> to improve your experience and security.</p><![endif] -->
+
+    <!-- Preloader -->
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+    </div>
+    <script type="text/javascript">
+        var hellopreloader = document.getElementById("hellopreloader_preload");
+
+        function fadeOutnojquery(el) {
+            el.style.opacity = 1;
+            var interhellopreloader = setInterval(function () {
+                el.style.opacity = el.style.opacity - 0.05;
+                if (el.style.opacity <= 0.05) {
+                    clearInterval(interhellopreloader);
+                    hellopreloader.style.display = "none";
+                }
+            }, 16);
+        }
+        window.onload = function () {
+            setTimeout(function () {
+                fadeOutnojquery(hellopreloader);
+            }, 500); // Время прелоадера 0.5s
+        };
+    </script>
+    <style>
+        #hellopreloader>p {
+            display: none;
+        }
+
+        #hellopreloader_preload {
+            display: block;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--color_text-pale) url("images/preloader_tail-spin.svg") center center no-repeat;
+            background-size: 48px;
+        }
+    </style>
+
+    <div class="block_main lp-02">
+        <div class="container">
+            <div class="header">
+                <img class="header-logo" src="images/logo-dark.svg" alt="Логотип">
+                <div class="header-links">
+                    <a class="link" href="mailto:vesbalans@gmail.com">Напишите нам
+                        <svg width="22" height="16" viewBox="0 0 22 16" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.786 15.7492C0.577713 15.7492 0.377942 15.6665 0.230567 15.5193C0.0831924 15.3721 0.000264996 15.1724 0 14.9642V1.42316L10.5 10.0742C10.6408 10.1902 10.8175 10.2537 11 10.2537C11.1825 10.2537 11.3592 10.1902 11.5 10.0742L22 1.53516V14.9642C22 15.1726 21.9172 15.3725 21.7698 15.5199C21.6224 15.6673 21.4225 15.7502 21.214 15.7502L0.786 15.7492ZM0.786 0.0351562H21.214C21.2533 0.0399065 21.2921 0.0479345 21.33 0.0591563L11 8.44816L0.786 0.0351562Z" />
+                        </svg>
+                    </a>
+                    <a class="link" href="https://lms.vesbalans.ru/">Личный кабинет
+                        <svg width="22" height="23" viewBox="0 0 22 23" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.786001 22.0357C0.577541 22.0357 0.377619 21.9528 0.230215 21.8054C0.0828116 21.658 1.14819e-06 21.4581 1.14819e-06 21.2497C-0.000793338 19.9409 0.410738 18.6651 1.17616 17.6035C1.94159 16.5419 3.022 15.7484 4.264 15.3357L7.609 14.2207C7.68893 14.1938 7.77267 14.1799 7.857 14.1797H14.143C14.2273 14.1799 14.3111 14.1938 14.391 14.2207L17.736 15.3357C18.978 15.7484 20.0584 16.5419 20.8238 17.6035C21.5893 18.6651 22.0008 19.9409 22 21.2497C22 21.4581 21.9172 21.658 21.7698 21.8054C21.6224 21.9528 21.4225 22.0357 21.214 22.0357H0.786001ZM6.286 7.89266V4.74966C6.286 3.49929 6.78271 2.30014 7.66685 1.416C8.55099 0.531861 9.75014 0.0351563 11.0005 0.0351562C12.2509 0.0351563 13.45 0.531861 14.3342 1.416C15.2183 2.30014 15.715 3.49929 15.715 4.74966V7.89266C15.715 9.14302 15.2183 10.3422 14.3342 11.2263C13.45 12.1105 12.2509 12.6072 11.0005 12.6072C9.75014 12.6072 8.55099 12.1105 7.66685 11.2263C6.78271 10.3422 6.286 9.14302 6.286 7.89266Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="main-text">
+                <p class="heading-main">
+                    Курс онлайн-
+                    тренировок для женщин
+                    <span>«Легко быть стройной!»</span>
+                </p>
+
+                <p class="subheading">
+                    Теперь Вы сможете заниматься фитнесом
+                    с персональным тренером, не выходя из дома!
+                </p>
+
+                <a href="#more-details" class="btn_main">
+                    <span>Подробно о курсе</span>
+                    <img src="images/arrow_bottom-white.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_if lp-02" id="more-details">
+        <div class="container">
+            <div class="if-text">
+                <p class="heading-lg">Курс «Легко быть стройной!»<br> <span>подойдёт для Вас, если:</span></p>
+            </div>
+            <div class="if-wrapper">
+                <div class="item">
+                    <div class="circles circles-cyan">1.</div>
+                    <p>У Вас совершенно нет
+                        времени ходить в спортзал, и единственный выход – тренироваться дома.</p>
+                </div>
+                <div class="item">
+                    <div class="circles circles-teal">2.</div>
+                    <p>Вы успели похудеть,
+                        но Вам совершенно не нравится качество и формы Вашего тела.</p>
+                </div>
+                <div class="item">
+                    <div class="circles circles-cyan">3.</div>
+                    <p>Вы не хотите тратить
+                        деньги на дорогой абонемент в фитнес-клуб..</p>
+                </div>
+                <div class="item">
+                    <div class="circles circles-teal">4.</div>
+                    <p>У Вас совершенно нет
+                        времени ходить в спортзал, и единственный выход – тренироваться дома.</p>
+                </div>
+                <div class="item">
+                    <div class="circles circles-cyan">5.</div>
+                    <p>Вы не хотите тратить
+                        деньги на дорогой абонемент в фитнес-клуб..</p>
+                </div>
+                <div class="item">
+                    <div class="circles circles-teal">6.</div>
+                    <p>Вы давно мечтали о персональном тренере, но не могли себе это позволить.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_reason lp-02">
+        <div class="container">
+            <div class="reason-wrapper">
+                <img class="bg-img-01" src="images/lp-02/img_reason-01.png">
+                <img class="bg-img-02" src="images/lp-02/img_reason-02.png">
+                <div class="reason-text">
+                    <p class="heading-lg">4 причины, почему нужно <br>
+                        <span>сказать спорту</span>
+                        <span class="handwriting text-cyan">Да!<img src="images/lp-02/line.svg">
+                        </span>
+                    </p>
+                </div>
+                <div class="items-list">
+                    <p class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <span>Поддержать скорость метаболизма</span> и не дать лишним калориям праздника отложиться про
+                        запас
+                    </p>
+                    <p class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <span>Подготовиться к праздникам, скинуть лишние кг</span> и выглядеть
+                        на празднике неотразимой
+                    </p>
+                    <p class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <span>Полностью снять воздействие токсинов,</span> поступивших в организм вместе с алкоголем и
+                        жирной пищей во время праздников
+                    </p>
+                    <p class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <span>Сбросить набранные за праздники несколько лишних килограмм</span> и вернуться к своему
+                        нормальному весу
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_during-course lp-02">
+        <div class="container">
+            <div class="dc-text">
+                <p class="heading-lg">
+                    Курс «Легко быть стройной!» <br>
+                    <span>состоит из 15 разных видов тренировок</span>
+                </p>
+            </div>
+            <div class="dc-wrapper">
+                <div class="cascade">
+                    <img src="images/lp-02/img_during-course.png">
+                    <p class="subtitle">
+                        <span class="text-cyan">32 видеоурока</span> заряженные <br> энергией, под музыку
+                    </p>
+                </div>
+                <div class="items-list">
+                    <div class="item">
+                        <img src="images/icon_checked-cyan.svg">
+                        <p>Отдельный комплекс тренировок <span>для тонуса верхнего плечевого пояса, спины и рук</span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/icon_checked-teal.svg">
+                        <p>Функциональный тренинг для <span>подготовленных</span> (адаптированный кроссфит)</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/icon_checked-cyan.svg">
+                        <p>Отдельный комплекс тренировок <span>для мышц ног, бёдер и попы</span></p>
+                    </div>
+                    <div class="item">
+                        <img src="images/icon_checked-teal.svg">
+                        <p>Комплексные силовые тренировки <span>для физически подготовленных женщин</span></p>
+                    </div>
+                    <div class="item">
+                        <img src="images/icon_checked-cyan.svg">
+                        <p>Комплексные силовые тренировки <span>для начинающих женщин</span></p>
+                    </div>
+                    <div class="item">
+                        <img src="images/icon_checked-teal.svg">
+                        <p><span>Танцевальные кардио</span> тренировки Зумба-Fitness</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_video-preview lp-02">
+        <div class="container">
+            <div class="vp-text">
+                <p class="heading-lg">
+                    В курсе «Легко быть стройной!» <br>
+                    <span>собраны только самые эффективные тренировки</span>
+                </p>
+            </div>
+            <div class="vp-wrapper item-01">
+                <div class="preview">
+                    <div class="top-part">
+                        <img src="images/lp-02/img_video-preview-01.jpg">
+                        <a class="video-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+                                <g id="button-play" data-name="button-play" transform="translate(-620 -2629)">
+                                    <circle id="button" data-name="button" cx="40" cy="40" r="40"
+                                        transform="translate(620 2629)" fill="#fff" />
+                                    <path id="play" data-name="play" d="M13.5,0,27,20H0Z"
+                                        transform="translate(672 2656) rotate(90)" fill="#233746" />
+                                </g>
+                            </svg>
+
+                            <span>Смотреть превью</spa>
+                        </a>
+                    </div>
+                    <div class="bottom-part">
+                        <p>Кардио тренировки в стиле зумба</p>
+                    </div>
+                </div>
+                <div class="items-list">
+                    <div class="item">
+                        <img src="images/arrow_right-blue.svg">
+                        <p>Подходит для женщин даже без начальной физической подготовки;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-blue.svg">
+                        <p>Помогает сжечь до 800 ккал за 1 занятие;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-blue.svg">
+                        <p>Стимулирует выброс эндорфинов;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-blue.svg">
+                        <p>Укрепляет мышцы ног, ягодиц, живота и рук;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-blue.svg">
+                        <p>Подавляет выработку молочной кислоты в мышцах, поэтому занятия проходят без лишнего
+                            напряжения;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-blue.svg">
+                        <p>Помогает расслабиться
+                            и снизить уровень стрессового гормона кортизола.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vp-wrapper item-02">
+                <div class="preview">
+                    <div class="top-part">
+                        <img src="images/lp-02/img_video-preview-02.jpg">
+                        <a class="video-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+                                <g id="button-play" data-name="button-play" transform="translate(-620 -2629)">
+                                    <circle id="button" data-name="button" cx="40" cy="40" r="40"
+                                        transform="translate(620 2629)" fill="#fff" />
+                                    <path id="play" data-name="play" d="M13.5,0,27,20H0Z"
+                                        transform="translate(672 2656) rotate(90)" fill="#233746" />
+                                </g>
+                            </svg>
+
+                            <span>Смотреть превью</spa>
+                        </a>
+                    </div>
+                    <div class="bottom-part">
+                        <p>Адаптированный кроссфит</p>
+                    </div>
+                </div>
+                <div class="items-list">
+                    <div class="item">
+                        <img src="images/arrow_right-teal.svg">
+                        <p>Развивает все группы мышц;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-teal.svg">
+                        <p>Улучшает гибкость тела;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-teal.svg">
+                        <p>Подходит не только начинающим спортсменам,
+                            но и тем, кто привык выкладываться в спортзале на полную;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-teal.svg">
+                        <p>Развивает сердечно-сосудистую и силовую выносливость, скорость и функциональность тела;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-teal.svg">
+                        <p>Помогает быстрее наращивать мышечную массу и активней сжигать жир;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-teal.svg">
+                        <p>Скульптурирует тело, делая Ваши формы более пропорциональными.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vp-wrapper item-03">
+                <div class="preview">
+                    <div class="top-part">
+                        <img src="images/lp-02/img_video-preview-03.jpg">
+                        <a class="video-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+                                <g id="button-play" data-name="button-play" transform="translate(-620 -2629)">
+                                    <circle id="button" data-name="button" cx="40" cy="40" r="40"
+                                        transform="translate(620 2629)" fill="#fff" />
+                                    <path id="play" data-name="play" d="M13.5,0,27,20H0Z"
+                                        transform="translate(672 2656) rotate(90)" fill="#233746" />
+                                </g>
+                            </svg>
+
+                            <span>Смотреть превью</spa>
+                        </a>
+                    </div>
+                    <div class="bottom-part">
+                        <p>Силовые тренировки</p>
+                    </div>
+                </div>
+                <div class="items-list">
+                    <div class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <p>При силовых тренировках Вы сжигаете на 40% жира больше и продолжаете тратить калории на
+                            восстановление мышц после тренинга;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <p>После 4 недель регулярных тренировок на 11% увеличивается гибкость плечевых и тазобедренных
+                            суставов;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <p>Силовые тренинги – лучшая профилактика ранней атрофии мышц;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <p>Регулярные тренировки способствуют стабилизации сахара в крови;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <p>После силовых тренировок организм продолжает сжигать калории, тратя их на восстановление
+                            мышц;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-cyan.svg">
+                        <p>После 16 недель силовых тренингов плотность костной ткани увеличивается на 19%.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vp-wrapper item-04">
+                <div class="preview">
+                    <div class="top-part">
+                        <img src="images/lp-02/img_video-preview-04.jpg">
+                        <a class="video-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+                                <g id="button-play" data-name="button-play" transform="translate(-620 -2629)">
+                                    <circle id="button" data-name="button" cx="40" cy="40" r="40"
+                                        transform="translate(620 2629)" fill="#fff" />
+                                    <path id="play" data-name="play" d="M13.5,0,27,20H0Z"
+                                        transform="translate(672 2656) rotate(90)" fill="#233746" />
+                                </g>
+                            </svg>
+
+                            <span>Смотреть превью</spa>
+                        </a>
+                    </div>
+                    <div class="bottom-part">
+                        <p>Отдельные силовые комплексы <br>
+                            для мышц для рук, спины и ног</p>
+                    </div>
+                </div>
+                <div class="items-list">
+                    <div class="item">
+                        <img src="images/arrow_right-green.svg">
+                        <p>Усиливают кровообращение в теле
+                            и улучшают питание головного мозга;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-green.svg">
+                        <p>Помогают подтянуть обвисшую кожу под руками и внутреннюю поверхность бедра;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-green.svg">
+                        <p>Помогают растянуть грудную клетку, улучшить осанку, укрепить пресс;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-green.svg">
+                        <p>Способствуют гармоничному формированию стройного тела;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-green.svg">
+                        <p>Способствуют формированию крепкого мышечного корсета;</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/arrow_right-green.svg">
+                        <p>Помогают сделать связочно-суставной аппарат более эластичным и выносливым.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_what-awaits-you lp-02">
+        <div class="container">
+            <div class="way-text">
+                <p class="heading-lg">Благодаря курсу тренировок <br>
+                    <span>«Легко быть стройной!»</span>
+                    <span class="handwriting text-cyan">Вы:<img src="images/lp-02/line.svg">
+                    </span>
+                </p>
+            </div>
+            <div class="way-wrapper">
+                <img class="bg-img-01" src="images/lp-02/img_what-awaits-you-01.jpg">
+                <div class="item">
+                    <div class="circles circles-cyan">1.</div>
+                    <div>
+                        <p class="heading-sm">Избавитесь от лишних килограмм</p>
+                        <p>При силовых тренировках мышцы активно сжигают жир. Мы построили тренировки таким образом,
+                            чтобы дополнительно задействовать мышцы-стабилизаторы, которые тратят во время работы больше
+                            всего энергии. В повседневной жизни при гиподинамии эти мышцы у нас практически
+                            бездействуют.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="circles circles-teal">2.</div>
+                    <div>
+                        <p class="heading-sm">Укрепите сердечно-
+                            сосудистую систему</p>
+                        <p>Правильная кардио нагрузка тренирует сердечно-сосудистую систему, способствует снижению
+                            вредного холестерина в крови, повышает чувствительность клеток к глюкозе, предотвращает
+                            инсулинорезистентность и развитие сахарного диабета 2 типа.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="way-wrapper right-side">
+                <img class="bg-img-02" src="images/lp-02/img_what-awaits-you-02.jpg">
+                <div class="item">
+                    <div class="circles circles-cyan">3.</div>
+                    <div>
+                        <p class="heading-sm">Улучшите координацию
+                            движений</p>
+                        <p>Во время танцевальных тренировок к активной работе тела и подключается головной мозг
+                            (вестибулярный аппарат), для того что бы мы могли легко разобраться с техникой движений и
+                            быстро переходить от одного упражнения к следующему. Это второй главный орган, потребляющий
+                            большое количество энергии, что делает тренировку ещё более эффективной для похудения.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="circles circles-teal">4.</div>
+                    <div>
+                        <p class="heading-sm">Укрепите мышечный корсет</p>
+                        <p>Тренировки помогут укрепить мышечный корсет, что очень важно для здоровья позвоночника.
+                            Регулярные занятия послужат отличной профилактикой остеохондроза, болей в спине искривления
+                            позвоночника.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="way-wrapper">
+                <img class="bg-img-03" src="images/lp-02/img_what-awaits-you-03.jpg">
+                <div class="item">
+                    <div class="circles circles-cyan">5.</div>
+                    <div>
+                        <p class="heading-sm">Укрепите мышцы рук</p>
+                        <p>Провисание кожи под руками – частая проблема у женщин, особенно после похудения. Вы укрепите
+                            мускулатуру рук, но не перекачаете её. Ваши руки станут не только сильными, они будут
+                            выглядеть женственно в любой одежде с коротким рукавом.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="circles circles-teal">6.</div>
+                    <div>
+                        <p class="heading-sm">Укрепите мышцы ног,
+                            подтяните попу и проработаете
+                            рельеф своих ножек</p>
+                        <p>Наши ноги испытывают колоссальные нагрузки. Тренировки помогут Вам предотвратить отложение
+                            солей в коленных суставах, укрепить связочно-суставной аппарат ног и прокачать мышцы
+                            внутренней части бёдер, которые очень мало работают вне тренировок. Итог: стройные,
+                            здоровые, красивые ножки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_price lp-02">
+        <div class="container">
+            <div class="price-wrapper">
+                <img class="bg-img-01" src="images/lp-02/img_price-01.jpg">
+                <img class="bg-img-02" src="images/lp-02/img_price-02.jpg">
+                <div class="item-price">
+                    <p class="heading-md">
+                        <span>Стоимость курса:</span>
+                    </p>
+                    <div class="old-price">
+                        <div class="suptitle">обычная цена:</div>
+                        <div class="price">2990 ₽</div>
+                    </div>
+                    <div class="new-price">
+                        <div class="suptitle">Цена сегодня:</div>
+                        <div class="price">1690 ₽</div>
+                    </div>
+                    <a href="#" class="btn_buy-course">Купить курс со скидкой</a>
+                    <p class="subtitle">(доступ к программе бессрочный)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="copyright">
+                    <p>© 2020, Международный центр <br>
+                        похудения Кристины Шереметьевой</p>
+                    <img src="images/icon_visa-mastercard.svg" alt="visa and mastercard">
+                </div>
+                <div class="terms-of-use">
+                    <a href="#">Условия обработки персональных&nbsp;данных</a> <br>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+                <div class="footer_social-list">
+                    <a href="https://instagram.com/dietolog_kristina/" target="_blank">
+                        <img src="images/icon_social-instagram.svg">
+                    </a>
+                    <a href="https://vk.com/club148320189">
+                        <img src="images/icon_social-vkontakte.svg" target="_blank">
+                    </a>
+                    <a href="https://facebook.com/dietologkristina/">
+                        <img src="images/icon_social-facebook.svg" target="_blank">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCMoQHRz_2Hbp8Lb6rZW22_w">
+                        <img src="images/icon_social-youtube.svg" target="_blank">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- "Back to Top" Button -->
+    <a id="back-to-top">
+        <img src="images/btn_back-to-top.svg" alt="кнопка наверх">
+    </a>
+
+    <!-- Scripts -->
+    <script src="scripts/jquery-3.5.1.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
