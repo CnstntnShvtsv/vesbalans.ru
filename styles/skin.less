@@ -25,9 +25,9 @@
 @shadow: var(--shadow);
 
 /* Block "Main" */
-.block_main.lp-04 {
+.block_main {
     background-color: @color_bg-gray;
-    background-image: url('../images/lp-04/img_main-bg.jpg');
+    background-image: url('../images/skin/img_main-bg.jpg');
     background-position: 100% bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -91,7 +91,7 @@
 }
 
 /* Block "If" */
-.block_if.lp-04 {
+.block_if {
     background-image: url('../images/bg_decor-horizontal.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@
 }
 
 /* Block "Author" */
-.block_author.lp-04 {
+.block_author {
     background-color: @color_bg-mint;
     padding-top: 80px;
     padding-bottom: 120px;
@@ -181,7 +181,7 @@
 }
 
 /* Block "What Awaits You" */
-.block_what-awaits-you.lp-04 {
+.block_what-awaits-you {
     padding: 80px 0;
     text-align: center;
 
@@ -242,6 +242,13 @@
         grid-gap: 20px;
     }
 
+    .title {
+        min-height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
     ul {
         margin-top: 20px;
     }
@@ -252,9 +259,9 @@
 }
 
 /* Block "During Course" */
-.block_during-course.lp-04 {
+.block_during-course {
     padding: 40px 0;
-    background-image: url('../images/lp-04/img_during-course-bg.jpg');
+    background-image: url('../images/skin/img_during-course-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -334,7 +341,7 @@
 }
 
 /* Block "After Course" */
-.block_after-course.lp-04 {
+.block_after-course {
     padding: 60px 0;
 
     .ac-text {
@@ -378,7 +385,7 @@
 }
 
 /* Block "Price" */
-.block_price.lp-04 {
+.block_price {
     margin-top: 40px;
 
     .price-wrapper {
@@ -490,7 +497,7 @@
 @media screen and (max-width: 1199.8px) {
 
     /* Block "Main" */
-    .block_main.lp-04 {
+    .block_main {
         background-position: 256px bottom;
     }
 }
@@ -498,7 +505,7 @@
 @media screen and (max-width: 991.8px) {
 
     /* Block "Main" */
-    .block_main.lp-04 {
+    .block_main {
         background-position: 192px bottom;
 
         .main-text {
@@ -522,7 +529,7 @@
     }
 
     /* Block "If" */
-    .block_if.lp-04 {
+    .block_if {
         padding: 60px 0;
 
         .if-wrapper {
@@ -541,7 +548,7 @@
     }
 
     /* Block "Author" */
-    .block_author.lp-04 {
+    .block_author {
         padding-top: 60px;
         padding-bottom: 80px;
 
@@ -564,7 +571,7 @@
     }
 
     /* Block "What Awaits You" */
-    .block_what-awaits-you.lp-04 {
+    .block_what-awaits-you {
         padding: 60px 0;
 
         .way-wrapper {
@@ -592,6 +599,10 @@
             grid-gap: 16px;
         }
 
+        .title {
+            min-height: 56px;
+        }
+
         ul {
             margin-top: 20px;
         }
@@ -602,7 +613,7 @@
     }
 
     /* Block "During Course" */
-    .block_during-course.lp-04 {
+    .block_during-course {
         .dc-wrapper {
             grid-gap: 30px;
             margin-top: 40px;
@@ -614,7 +625,7 @@
     }
 
     /* Block "After Course" */
-    .block_after-course.lp-04 {
+    .block_after-course {
         .items-list {
             margin-left: 40%;
         }
@@ -629,7 +640,7 @@
     }
 
     /* Block "Price" */
-    .block_price.lp-04 {
+    .block_price {
         .bg-img-01 {
             right: -15%;
         }
@@ -687,7 +698,7 @@
 @media screen and (max-width: 767.8px) {
 
     /* Block "Main" */
-    .block_main.lp-04 {
+    .block_main {
         background-position: center bottom;
 
         .main-text {
@@ -711,7 +722,7 @@
     }
 
     /* Block "Author" */
-    .block_author.lp-04 {
+    .block_author {
         padding-top: 40px;
         padding-bottom: 40px;
 
@@ -748,7 +759,7 @@
     }
 
     /* Block "What Awaits You" */
-    .block_what-awaits-you.lp-04 {
+    .block_what-awaits-you {
         padding: 40px 0;
 
         .way-wrapper {
@@ -783,7 +794,7 @@
     }
 
     /* Block "During Course" */
-    .block_during-course.lp-04 {
+    .block_during-course {
 
         .dc-wrapper {
             grid-template-columns: 1fr;
@@ -808,7 +819,7 @@
     }
 
     /* Block "After Course" */
-    .block_after-course.lp-04 {
+    .block_after-course {
         padding: 40px 0;
 
         .ac-wrapper {
@@ -829,7 +840,7 @@
     }
 
     /* Block "Price" */
-    .block_price.lp-04 {
+    .block_price {
         margin: 0;
         padding: 40px 0;
 
@@ -866,8 +877,8 @@
 @media screen and (max-width: 575.8px) {
 
     /* Block "Main" */
-    .block_main.lp-04 {
-        background-image: url('../images/lp-04/img_main-bg-sm.jpg');
+    .block_main {
+        background-image: url('../images/skin/img_main-bg-sm.jpg');
 
         .main-text {
             .heading-main {
@@ -888,7 +899,7 @@
     }
 
     /* Block "If" */
-    .block_if.lp-04 {
+    .block_if {
         padding: 40px 0;
 
         .if-wrapper {
@@ -907,7 +918,7 @@
     }
 
     /* Block "Author" */
-    .block_author.lp-04 {
+    .block_author {
         .item-photo {
             height: 320px;
         }
@@ -918,7 +929,7 @@
     }
 
     /* Block "What Awaits You" */
-    .block_what-awaits-you.lp-04 {
+    .block_what-awaits-you {
         ul {
             position: relative;
             margin-left: -76px;
@@ -929,7 +940,7 @@
 @media screen and (max-width: 383.8px) {
 
     /* Block "During Course" */
-    .block_during-course.lp-04 {
+    .block_during-course {
         .cascade {
             height: 320px;
         }

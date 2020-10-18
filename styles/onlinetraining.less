@@ -25,9 +25,9 @@
 @shadow: var(--shadow);
 
 /* Block "Main" */
-.block_main.lp-02 {
+.block_main {
     background-color: white;
-    background-image: url('../images/lp-02/img_main-bg.jpg');
+    background-image: url('../images/onlinetraining/img_main-bg.jpg');
     background-position: 100% bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -91,7 +91,7 @@
 }
 
 /* Block "If" */
-.block_if.lp-02 {
+.block_if {
     background-image: url('../images/bg_decor-horizontal.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -123,7 +123,7 @@
 }
 
 /* Block "Reason" */
-.block_reason.lp-02 {
+.block_reason {
     background-color: @color_bg-light;
 
     .container {
@@ -179,7 +179,7 @@
 }
 
 /* Block "During Course" */
-.block_during-course.lp-02 {
+.block_during-course {
     padding: 80px 0;
     background-image: url('../images/bg_decor-horizontal.svg');
     background-position: center;
@@ -238,7 +238,7 @@
 }
 
 /* Block "Video Preview" */
-.block_video-preview.lp-02 {
+.block_video-preview {
     padding: 80px 0;
 
     .vp-text {
@@ -350,7 +350,7 @@
 }
 
 /* Block "What Awaits You" */
-.block_what-awaits-you.lp-02 {
+.block_what-awaits-you {
     padding: 40px 0;
 
     .way-text {
@@ -413,9 +413,16 @@
         align-items: flex-start;
         grid-gap: 20px;
 
-        p+p {
+        .title+p {
             margin-top: 10px;
         }
+    }
+
+    .title {
+        min-height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .item+.item {
@@ -424,7 +431,7 @@
 }
 
 /* Block "Price" */
-.block_price.lp-02 {
+.block_price {
     background-color: @color_bg-light;
     margin-top: 40px;
 
@@ -536,7 +543,7 @@
 @media screen and (max-width: 1439.8px) {
 
     /* Block "Main" */
-    .block_main.lp-02 {
+    .block_main {
         background-position: 496px bottom;
     }
 }
@@ -544,7 +551,7 @@
 @media screen and (max-width: 1199.8px) {
 
     /* Block "Main" */
-    .block_main.lp-02 {
+    .block_main {
         background-position: 416px bottom;
     }
 }
@@ -552,7 +559,7 @@
 @media screen and (max-width: 991.8px) {
 
     /* Block "Main" */
-    .block_main.lp-02 {
+    .block_main {
         background-position: 336px bottom;
 
         .main-text {
@@ -576,7 +583,7 @@
     }
 
     /* Block "If" */
-    .block_if.lp-02 {
+    .block_if {
         padding: 60px 0;
 
         .if-wrapper {
@@ -593,7 +600,7 @@
     }
 
     /* Block "Reason" */
-    .block_reason.lp-02 {
+    .block_reason {
         .reason-wrapper {
             padding: 60px 0;
         }
@@ -622,7 +629,7 @@
     }
 
     /* Block "During Course" */
-    .block_during-course.lp-02 {
+    .block_during-course {
         padding: 60px 0;
 
         .dc-wrapper {
@@ -631,7 +638,7 @@
     }
 
     /* Block "Video Preview" */
-    .block_video-preview.lp-02 {
+    .block_video-preview {
         padding: 60px 0;
 
         .vp-wrapper {
@@ -669,7 +676,7 @@
     }
 
     /* Block "What Awaits You" */
-    .block_what-awaits-you.lp-02 {
+    .block_what-awaits-you {
         .way-wrapper+.way-wrapper {
             margin-top: 60px;
         }
@@ -693,10 +700,14 @@
             width: 60%;
             grid-gap: 16px;
         }
+
+        .title {
+            min-height: 56px;
+        }
     }
 
     /* Block "Price" */
-    .block_price.lp-02 {
+    .block_price {
         .bg-img-01 {
             left: -15%;
         }
@@ -754,7 +765,7 @@
 @media screen and (max-width: 767.8px) {
 
     /* Block "Main" */
-    .block_main.lp-02 {
+    .block_main {
         background-position: center bottom;
 
         .main-text {
@@ -778,7 +789,7 @@
     }
 
     /* Block "Reason" */
-    .block_reason.lp-02 {
+    .block_reason {
         .reason-wrapper {
             padding: 40px 0;
         }
@@ -809,7 +820,7 @@
     }
 
     /* Block "During Course" */
-    .block_during-course.lp-02 {
+    .block_during-course {
         padding: 40px 0;
 
         .items-list {
@@ -823,7 +834,7 @@
     }
 
     /* Block "Video Preview" */
-    .block_video-preview.lp-02 {
+    .block_video-preview {
         padding: 40px 0;
 
         .vp-wrapper {
@@ -843,7 +854,7 @@
     }
 
     /* Block "What Awaits You" */
-    .block_what-awaits-you.lp-02 {
+    .block_what-awaits-you {
         padding: 40px 0;
 
         .way-wrapper {
@@ -879,7 +890,7 @@
     }
 
     /* Block "Price" */
-    .block_price.lp-02 {
+    .block_price {
         margin: 0;
         padding: 40px 0;
 
@@ -916,8 +927,8 @@
 @media screen and (max-width: 575.8px) {
 
     /* Block "Main" */
-    .block_main.lp-02 {
-        background-image: url('../images/lp-02/img_main-bg-sm.jpg');
+    .block_main {
+        background-image: url('../images/onlinetraining/img_main-bg-sm.jpg');
 
         .main-text {
             .heading-main {
@@ -938,7 +949,7 @@
     }
 
     /* Block "If" */
-    .block_if.lp-02 {
+    .block_if {
         padding: 40px 0;
 
         .if-wrapper {
@@ -955,7 +966,7 @@
     }
 
     /* Block "Reason" */
-    .block_reason.lp-02 {
+    .block_reason {
         .bg-img-02 {
             max-width: 320px;
         }
@@ -966,7 +977,7 @@
     }
 
     /* Block "Video Preview" */
-    .block_video-preview.lp-02 {
+    .block_video-preview {
         .preview {
             height: 288px;
 

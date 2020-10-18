@@ -25,9 +25,9 @@
 @shadow: var(--shadow);
 
 /* Block "Main" */
-.block_main.lp-05 {
+.block_main {
     background-color: @color_bg-beige;
-    background-image: url('../images/lp-05/img_main-bg.jpg');
+    background-image: url('../images/ic-holidays/img_main-bg.jpg');
     background-position: 100% bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -100,7 +100,7 @@
 }
 
 /* Block "If" */
-.block_if.lp-05 {
+.block_if {
     .title {
         text-align: center;
         margin: 20px auto 60px auto;
@@ -137,7 +137,7 @@
 }
 
 /* Block "What Awaits You" */
-.block_what-awaits-you.lp-05 {
+.block_what-awaits-you {
     padding-top: 120px;
     text-align: center;
 
@@ -162,6 +162,13 @@
         grid-gap: 20px;
     }
 
+    .title {
+        min-height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
     ul {
         margin-top: 20px;
     }
@@ -172,7 +179,7 @@
 }
 
 /* Block "Author" */
-.block_author.lp-05 {
+.block_author {
     background-color: @color_bg-light;
     padding-top: 70px;
     padding-bottom: 80px;
@@ -232,7 +239,7 @@
 }
 
 /* Block "After Course" */
-.block_after-course.lp-05 {
+.block_after-course {
     padding: 60px 0;
 
     .ac-text {
@@ -276,7 +283,7 @@
 }
 
 /* Block "Price" */
-.block_price.lp-05 {
+.block_price {
     margin-top: 40px;
 
     .price-wrapper {
@@ -389,7 +396,7 @@
 @media screen and (max-width: 1199.8px) {
 
     /* Block "Main" */
-    .block_main.lp-05 {
+    .block_main {
         background-position: 256px bottom;
     }
 }
@@ -397,7 +404,7 @@
 @media screen and (max-width: 991.8px) {
 
     /* Block "Main" */
-    .block_main.lp-05 {
+    .block_main {
         background-position: 192px bottom;
 
         .main-text {
@@ -426,7 +433,7 @@
     }
 
     /* Block "If" */
-    .block_if.lp-05 {
+    .block_if {
         .if-wrapper {
             grid-gap: 60px;
         }
@@ -443,11 +450,15 @@
     }
 
     /* Block "What Awaits You" */
-    .block_what-awaits-you.lp-05 {
+    .block_what-awaits-you {
         padding-top: 100px;
 
         .way-wrapper {
             grid-gap: 20px;
+        }
+
+        .title {
+            min-height: 56px;
         }
 
         ul li {
@@ -457,7 +468,7 @@
     }
 
     /* Block "Author" */
-    .block_author.lp-05 {
+    .block_author {
         padding-top: 50px;
         padding-bottom: 60px;
 
@@ -480,7 +491,7 @@
     }
 
     /* Block "After Course" */
-    .block_after-course.lp-05 {
+    .block_after-course {
         .items-list {
             margin-right: 40%;
         }
@@ -500,7 +511,7 @@
     }
 
     /* Block "Price" */
-    .block_price.lp-05 {
+    .block_price {
         .bg-img-01 {
             right: -15%;
         }
@@ -558,7 +569,7 @@
 @media screen and (max-width: 767.8px) {
 
     /* Block "Main" */
-    .block_main.lp-05 {
+    .block_main {
         background-position: center bottom;
 
         .main-text {
@@ -582,7 +593,7 @@
     }
 
     /* Block "What Awaits You" */
-    .block_what-awaits-you.lp-05 {
+    .block_what-awaits-you {
         padding-top: 80px;
 
         .way-wrapper {
@@ -605,7 +616,7 @@
     }
 
     /* Block "Author" */
-    .block_author.lp-05 {
+    .block_author {
         padding-top: 40px;
         padding-bottom: 40px;
 
@@ -642,7 +653,7 @@
     }
 
     /* Block "After Course" */
-    .block_after-course.lp-05 {
+    .block_after-course {
         padding: 40px 0;
 
         .ac-wrapper {
@@ -664,7 +675,7 @@
     }
 
     /* Block "Price" */
-    .block_price.lp-05 {
+    .block_price {
         margin: 0;
         padding: 40px 0;
 
@@ -701,8 +712,8 @@
 @media screen and (max-width: 575.8px) {
 
     /* Block "Main" */
-    .block_main.lp-05 {
-        background-image: url('../images/lp-05/img_main-bg-sm.jpg');
+    .block_main {
+        background-image: url('../images/ic-holidays/img_main-bg-sm.jpg');
 
         .main-text {
             .heading-main {
@@ -728,7 +739,7 @@
     }
 
     /* Block "If" */
-    .block_if.lp-05 {
+    .block_if {
         .if-wrapper {
             grid-gap: 40px;
         }
@@ -745,7 +756,7 @@
     }
 
     /* Block "What Awaits You" */
-    .block_what-awaits-you.lp-05 {
+    .block_what-awaits-you {
         ul {
             position: relative;
             margin-left: -76px;
@@ -753,7 +764,7 @@
     }
 
     /* Block "Author" */
-    .block_author.lp-05 {
+    .block_author {
         .item-photo {
             height: 320px;
         }
