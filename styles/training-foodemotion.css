@@ -842,6 +842,11 @@
   .block_author.lp-03 .skill {
     margin: 12px 0;
   }
+  /* Block "What Awaits You" */
+  .block_what-awaits-you.lp-03 ul {
+    position: relative;
+    margin-left: -76px;
+  }
   /* Block "During Course" */
   .block_during-course.lp-03 {
     background-image: none;

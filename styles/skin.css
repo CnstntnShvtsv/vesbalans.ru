@@ -721,6 +721,11 @@
   .block_author.lp-04 .skill {
     margin: 12px 0;
   }
+  /* Block "What Awaits You" */
+  .block_what-awaits-you.lp-04 ul {
+    position: relative;
+    margin-left: -76px;
+  }
 }
 @media screen and (max-width: 383.8px) {
   /* Block "During Course" */
