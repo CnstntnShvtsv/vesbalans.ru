@@ -575,18 +575,6 @@
   .block_main .link svg {
     fill: var(--color_bg-light);
   }
-  .block_main .link:hover {
-    color: var(--color_text-pale);
-  }
-  .block_main .link:hover svg {
-    fill: var(--color_text-pale);
-  }
-  .block_main .link:active {
-    color: var(--color_bg-light);
-  }
-  .block_main .link:active svg {
-    fill: var(--color_bg-light);
-  }
   .block_main .main-text {
     padding: 20px 0;
     max-width: 100%;
@@ -600,7 +588,7 @@
     margin-top: 32px;
   }
   .block_main .main-text p + a {
-    margin-top: 280px;
+    margin-top: 304px;
   }
   /* Block "What Awaits You" */
   .block_what-awaits-you .way-wrapper {

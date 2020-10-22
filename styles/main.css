@@ -58,7 +58,7 @@ a::before,
 a::after {
   display: inline-block;
   text-decoration: none;
-  transition: all 0.1s ease;
+  transition: all 0.2s ease-in-out;
 }
 p span,
 ul li span {
@@ -185,33 +185,28 @@ span.handwriting img {
   align-items: center;
 }
 .block_main .link {
-  color: var(--color_text-dark);
+  color: var(--color_blue-gray);
   font-size: 17px;
   line-height: 25px;
   margin-left: 40px;
   padding-right: 40px;
   position: relative;
   white-space: nowrap;
+  opacity: 0.7;
 }
 .block_main .link svg {
-  fill: var(--color_text-dark);
+  fill: var(--color_blue-gray);
   position: absolute;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  transition: all 0.1s ease;
+  transition: all 0.2s ease-in-out;
 }
 .block_main .link:hover {
-  color: var(--color_blue-gray);
-}
-.block_main .link:hover svg {
-  fill: var(--color_blue-gray);
+  opacity: 1;
 }
 .block_main .link:active {
-  color: var(--color_text-dark);
-}
-.block_main .link:active svg {
-  fill: var(--color_text-dark);
+  opacity: 0.7;
 }
 /* Footer */
 .footer-wrapper {

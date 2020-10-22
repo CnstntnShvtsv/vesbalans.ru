@@ -97,7 +97,7 @@ a::before,
 a::after {
     display: inline-block;
     text-decoration: none;
-    transition: all 0.1s ease;
+    transition: all 0.2s ease-in-out;
 }
 
 p span,
@@ -252,37 +252,30 @@ span.handwriting {
     }
 
     .link {
-        color: @color_text-dark;
+        color: @color_blue-gray;
         font-size: 17px;
         line-height: 25px;
         margin-left: 40px;
         padding-right: 40px;
         position: relative;
         white-space: nowrap;
+        opacity: 0.7;
 
         svg {
-            fill: @color_text-dark;
+            fill: @color_blue-gray;
             position: absolute;
             top: 50%;
             right: 0;
             transform: translateY(-50%);
-            transition: all 0.1s ease;
+            transition: all 0.2s ease-in-out;
         }
 
         &:hover {
-            color: @color_blue-gray;
-
-            svg {
-                fill: @color_blue-gray;
-            }
+            opacity: 1;
         }
 
         &:active {
-            color: @color_text-dark;
-
-            svg {
-                fill: @color_text-dark;
-            }
+            opacity: 0.7;
         }
     }
 }

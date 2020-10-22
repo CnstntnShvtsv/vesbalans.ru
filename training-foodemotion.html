@@ -13,6 +13,7 @@
     <!-- Preloading Scripts -->
     <link rel="preload" href="scripts/jquery-3.5.1.js" as="script">
     <link rel="preload" href="slick/slick.js" as="script">
+    <link rel="preload" href="scripts/slider.js" as="script">
     <link rel="preload" href="scripts/main.js" as="script">
 
     <!-- Fonts -->
@@ -104,9 +105,12 @@
 
     <!-- Block "Main" -->
     <div class="block_main">
+        <div class="overlay"></div>
         <div class="container">
             <div class="header">
-                <img class="header-logo" src="images/logo-dark.svg" alt="Логотип">
+                <a href="#">
+                    <img class="header-logo" src="images/logo-dark.svg" alt="Логотип">
+                </a>
                 <div class="header-links">
                     <a class="link" href="mailto:vesbalans@gmail.com">Напишите нам
                         <svg width="22" height="16" viewBox="0 0 22 16" fill="black" xmlns="http://www.w3.org/2000/svg">
@@ -267,7 +271,9 @@
                 <div class="item">
                     <div class="circles circles-cyan">3.</div>
                     <div>
-                        <div class="title"><p class="heading-sm">Закрепление результатов</p></div>
+                        <div class="title">
+                            <p class="heading-sm">Закрепление результатов</p>
+                        </div>
                         <ul class="arrow-cyan">
                             <li>Дневник пищевого поведения для формирования полезных пищевых привычек</li>
                             <li>Авторские рецепты блюд для преодоления психологического голода. (При минимальном
@@ -417,7 +423,7 @@
                         <div class="suptitle">Цена сегодня:</div>
                         <div class="price">1590 ₽</div>
                     </div>
-                    <a href="https://lms.vesbalans.ru/lollipop_stress" class="btn_buy-course">Подробно о куре</a>
+                    <a href="https://lms.vesbalans.ru/lollipop_stress" class="btn_buy-course">Купить курс со скидкой</a>
                     <p class="subtitle">(доступ к программе бессрочный)</p>
                 </div>
             </div>
@@ -434,8 +440,9 @@
                     <img src="images/icon_visa-mastercard.svg" alt="visa and mastercard">
                 </div>
                 <div class="terms-of-use">
-                    <a href="#">Условия обработки персональных&nbsp;данных</a> <br>
-                    <a href="#">Пользовательское соглашение</a>
+                    <a href="https://vesbalans.ru/personal_information.html" target="_blank">Условия обработки
+                        персональных&nbsp;данных</a> <br>
+                    <a href="https://vesbalans.ru/agreement.html" target="_blank">Пользовательское соглашение</a>
                 </div>
                 <div class="footer_social-list">
                     <a href="https://instagram.com/dietolog_kristina/" target="_blank">
@@ -463,6 +470,7 @@
     <!-- Scripts -->
     <script src="scripts/jquery-3.5.1.js"></script>
     <script src="slick/slick.js"></script>
+    <script src="scripts/slider.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 

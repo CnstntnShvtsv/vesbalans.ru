@@ -100,9 +100,12 @@
 
     <!-- Block "Main" -->
     <div class="block_main">
+        <div class="overlay"></div>
         <div class="container">
             <div class="header">
-                <img class="header-logo" src="images/logo-dark.svg" alt="Логотип">
+                <a href="#">
+                    <img class="header-logo" src="images/logo-dark.svg" alt="Логотип">
+                </a>
                 <div class="header-links">
                     <a class="link" href="mailto:vesbalans@gmail.com">Напишите нам
                         <svg width="22" height="16" viewBox="0 0 22 16" fill="black" xmlns="http://www.w3.org/2000/svg">
@@ -278,7 +281,7 @@
                 <div class="preview">
                     <div class="top-part">
                         <img src="images/onlinetraining/img_video-preview-01.jpg">
-                        <a class="video-link" href="https://www.youtube.com/watch?v=16DTs9qcvys" target="_blank">
+                        <a class="video-link" id="btn_modal-01">
                             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
                                 <g id="button-play" data-name="button-play" transform="translate(-620 -2629)">
                                     <circle id="button" data-name="button" cx="40" cy="40" r="40"
@@ -328,7 +331,7 @@
                 <div class="preview">
                     <div class="top-part">
                         <img src="images/onlinetraining/img_video-preview-02.jpg">
-                        <a class="video-link" href="https://www.youtube.com/watch?v=EjTo9AMxr5A" target="_blank">
+                        <a class="video-link" id="btn_modal-02">
                             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
                                 <g id="button-play" data-name="button-play" transform="translate(-620 -2629)">
                                     <circle id="button" data-name="button" cx="40" cy="40" r="40"
@@ -377,7 +380,7 @@
                 <div class="preview">
                     <div class="top-part">
                         <img src="images/onlinetraining/img_video-preview-03.jpg">
-                        <a class="video-link" href="https://www.youtube.com/watch?v=RbgCuf5Tnis" target="_blank">
+                        <a class="video-link" id="btn_modal-03">
                             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
                                 <g id="button-play" data-name="button-play" transform="translate(-620 -2629)">
                                     <circle id="button" data-name="button" cx="40" cy="40" r="40"
@@ -428,7 +431,7 @@
                 <div class="preview">
                     <div class="top-part">
                         <img src="images/onlinetraining/img_video-preview-04.jpg">
-                        <a class="video-link" href="https://www.youtube.com/watch?v=SZVMCRN6Rqw" target="_blank">
+                        <a class="video-link" id="btn_modal-04">
                             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
                                 <g id="button-play" data-name="button-play" transform="translate(-620 -2629)">
                                     <circle id="button" data-name="button" cx="40" cy="40" r="40"
@@ -474,6 +477,39 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="modal-wrapper" id="modal-01">
+        <div class="modal">
+            <a title="Close (Esc)" type="button" class="btn_close"></a>
+            <iframe id="frame-01" width="480" height="270" src="" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="modal-wrapper" id="modal-02">
+        <div class="modal">
+            <a title="Close (Esc)" type="button" class="btn_close"></a>
+            <iframe id="frame-02" width="480" height="270" src="" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="modal-wrapper" id="modal-03">
+        <div class="modal">
+            <a title="Close (Esc)" type="button" class="btn_close"></a>
+            <iframe id="frame-03" width="480" height="270" src="" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="modal-wrapper" id="modal-04">
+        <div class="modal">
+            <a title="Close (Esc)" type="button" class="btn_close"></a>
+            <iframe id="frame-04" width="480" height="270" src="" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </div>
 
@@ -608,8 +644,9 @@
                     <img src="images/icon_visa-mastercard.svg" alt="visa and mastercard">
                 </div>
                 <div class="terms-of-use">
-                    <a href="#">Условия обработки персональных&nbsp;данных</a> <br>
-                    <a href="#">Пользовательское соглашение</a>
+                    <a href="https://vesbalans.ru/personal_information.html" target="_blank">Условия обработки
+                        персональных&nbsp;данных</a> <br>
+                    <a href="https://vesbalans.ru/agreement.html" target="_blank">Пользовательское соглашение</a>
                 </div>
                 <div class="footer_social-list">
                     <a href="https://instagram.com/dietolog_kristina/" target="_blank">

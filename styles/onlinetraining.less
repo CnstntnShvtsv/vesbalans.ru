@@ -31,9 +31,19 @@
     background-position: 100% bottom;
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, white 40%, transparent 60%);
+        z-index: 0;
+    }
 
     .main-text {
-        background: linear-gradient(90deg, white 50%, transparent);
         padding-top: 56px;
         padding-bottom: 80px;
         width: 100%;
@@ -257,6 +267,7 @@
     }
 
     .video-link {
+        cursor: pointer;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -346,6 +357,52 @@
             width: 12px;
             height: auto;
         }
+    }
+}
+
+.modal-wrapper {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 0 5%;
+
+    overflow-y: scroll;
+}
+
+.modal {
+    display: block;
+    margin: 80px auto;
+    width: 100%;
+    max-width: 960px;
+    height: 540px;
+
+    position: relative;
+
+    .btn_close {
+        position: absolute;
+        z-index: 9999;
+        top: -28px;
+        right: 4px;
+
+        background-image: url('../images/btn_close.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
     }
 }
 
@@ -674,6 +731,11 @@
             line-height: 24px;
         }
     }
+    
+    .modal {
+        margin: 60px auto;
+        height: 480px;
+    }
 
     /* Block "What Awaits You" */
     .block_what-awaits-you {
@@ -768,8 +830,11 @@
     .block_main {
         background-position: center bottom;
 
+        .overlay {
+            background: linear-gradient(180deg, white 40%, transparent 60%);
+        }
+
         .main-text {
-            background: linear-gradient(180deg, white, transparent 50%);
             padding: 20px 0;
             max-width: 100%;
             display: flex;
@@ -851,6 +916,16 @@
             margin-top: 20px;
             grid-template-columns: 1fr 1fr;
         }
+
+        .item {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    .modal {
+        margin: 40px auto;
+        height: 420px;
     }
 
     /* Block "What Awaits You" */
@@ -993,5 +1068,9 @@
         .items-list {
             grid-template-columns: 1fr;
         }
+    }
+
+    .modal {
+        height: 360px;
     }
 }
