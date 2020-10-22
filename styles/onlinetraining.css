@@ -847,4 +847,10 @@
   .modal {
     height: 360px;
   }
+  /* Block "What Awaits You" */
+  .block_what-awaits-you .item .title + p {
+    margin-top: 10px;
+    position: relative;
+    margin-left: -76px;
+  }
 }
